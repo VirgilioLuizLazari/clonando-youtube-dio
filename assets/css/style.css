@@ -1,0 +1,263 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ececec;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    line-height: 120%;
+}
+
+p {
+    color: #515151;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+
+.menu-cabecalho {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    margin: 0 24px 0 24px;
+}
+
+.title {
+    font-weight: 600;
+
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.margem-padrao-peq {
+    margin-bottom: 8px;
+}
+
+.margem-padrao {
+    margin-bottom: 16px;
+}
+
+.espaco-padrao {
+    padding: 0 8px;
+}
+
+.subsize {
+    font-size: 16px;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin-bottom: 28px !important;
+}
+
+header .menu-cabecalho,
+header .campo-busca{
+    display: flex;
+    align-items: stretch;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+header .menu-cabecalho{
+    flex-direction: row;
+    align-content: space-around;
+}
+header .campo-busca button{
+    border: 0px;
+    background-color: transparent;
+}
+header .campo-busca input {
+  display: flex;
+  float: left;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+#btn-login img {
+    max-width: 34px;
+    max-height: 34px;
+    clip-path: circle(50%);
+
+}
+
+#btn-video img {
+    max-width: 34px;
+    max-height: 34px;
+
+}
+
+#btn-notif img {
+    max-width: 34px;
+    max-height: 34px;
+}
+
+#videoatual,
+#videolista {
+    display: flex;
+}
+
+#videoatual .nav-video-atual {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#videoatual .nav-video-atual ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#videoatual .nav-video-atual ul li {
+    align-content: center;
+    list-style: none;
+}
+
+#videoatual .nav-video-atual p,
+#videoatual .nav-video-atual img {
+    display: flex;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+#videoatual .nav-video-atual p > span
+#videoatual .nav-video-atual p > strong {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#videolista ul li {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    list-style: none;
+    margin-bottom: 16px;
+}
+#videolista ul li>.imgbox,
+#videolista ul li>.box-thumbs{
+    width: 50%;
+}
+
+#videolista ul li>.imgbox {
+    margin-left: 8px;
+    width: 160px;
+}
+
+#videolista ul li>.imgbox img {
+    width: 160px;
+}
+
+#videolista ul li>.box-thumbs p {
+    font-size: 12px;
+}
+
+#videolista ul li>.box-thumbs h4 {
+    margin-bottom: 8px;
+}
+
+#videolista ul li>.box-thumbs h5 {
+    color: #515151;
+    font-size: 12px;
+    font-style: normal;
+}
+
+#btn-login {
+    display: flex;
+    justify-items: right;
+}
+
+
+
+
+
+
+@media (min-width:320px) {
+
+    /* smartphones, iPhone, portrait 480x320 phones */
+    #flex-container {
+        flex-direction: col;
+        margin: 0px 5%;
+        width: 90%;
+    }
+}
+
+@media (min-width:641px) {
+
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    #flex-container {
+        flex-direction: row;
+        margin: 0px auto;
+        width: 620px;
+    }
+}
+
+@media (min-width:961px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #flex-container {
+        width: 860px;
+    }
+}
+
+@media (min-width:1025px) {
+
+    /* big landscape tablets, laptops, and desktops */
+    #flex-container {
+        width: 960px;
+    }
+}
+
+@media (min-width:1281px) {
+
+    /* hi-res laptops and desktops */
+    #flex-container {
+        width: 1280px;
+    }
+}
+
+@media (min-width:1440px) {
+
+    /* hi-res laptops and desktops */
+    #flex-container {
+        width: 1400px;
+    }
+}
